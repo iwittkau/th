@@ -10,7 +10,7 @@ Package `must` uses `t.Fatal` to report any errors; package `should` uses `t.Fat
 # Example
 
 ```go
-package must_test
+package test
 
 import (
 	"encoding/json"
@@ -21,7 +21,7 @@ import (
 	"github.com/iwittkau/th/should"
 )
 
-func TestReturn_Examples(t *testing.T) {
+func TestExamples(t *testing.T) {
 	data := must.Return[any](t, []string{"test"}, json.Marshal) // type of input must be passed; return type []byte automatically inferred
 	t.Log(string(data))
 
