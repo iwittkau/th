@@ -5,7 +5,7 @@ test helpers
 
 This module contains test helpers for one-parameter-input-two-parameter-return style functions (e.g. `json.Marshal`, `os.Open`, etc.).
 
-Package `must` uses `t.Fatal` to report any errors; package `should` uses `t.Fatal` to report any errors.
+Package `must` uses `t.Fatal` to report any errors; package `should` uses `t.Error` to report any errors.
 
 # Example
 
